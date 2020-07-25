@@ -1,0 +1,5 @@
+TimeTrack.Web/app.db
+TimeTrack.Web/bin
+TimeTrack.Web/obj
+TimeTrack.Services/bin
+TimeTrack.Services/obj
