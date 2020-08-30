@@ -14,6 +14,6 @@ namespace TimeTrack.Web.Data
         {
             
         }
-        public DbSet<CategoryModel> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }

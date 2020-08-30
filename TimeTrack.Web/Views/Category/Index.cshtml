@@ -1,0 +1,26 @@
+@model List<Category>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Model.Any())
+    {
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td><a asp-action="Edit" asp-route-id="@category.Id">Edit</a></td>
+            </tr>
+        }
+    }
+    else
+    {
+        <text>No categories found. <a asp-action="Create">Create one?</a></text>
+    }
+    </tbody>
+</table>
